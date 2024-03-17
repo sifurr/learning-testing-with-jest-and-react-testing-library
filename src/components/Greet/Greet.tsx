@@ -1,6 +1,10 @@
 
-export const Greet = () => {
-  return (
-    <div>Greet</div>
-  )
+type GreetProps = {
+    name?: string;
+}
+
+export const Greet = ({name}: GreetProps) => {
+    return (
+       <div>Hello {name}</div>
+    )
 }
