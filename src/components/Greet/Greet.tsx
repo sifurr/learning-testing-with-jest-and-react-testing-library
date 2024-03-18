@@ -1,10 +1,9 @@
+import { GreetProps } from "./Greet.types"
 
-type GreetProps = {
-    name?: string;
-}
 
 export const Greet = ({name}: GreetProps) => {
     return (
-       <div>Hello {name}</div>
+       <div>Hello {name ? name : "Guest"} </div>
     )
 }
+
